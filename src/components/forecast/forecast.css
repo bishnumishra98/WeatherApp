@@ -1,6 +1,8 @@
 .title {
+    color: white;
     font-size: 23px;
     font-weight: 700;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .daily-item {
@@ -55,11 +57,11 @@
 }
 
 .daily-details-grid-items label:first-child {
-    color: #757575;
+    color: #d6c2c2;
 }
 
 .daily-details-grid-items label:last-child {
-    color: #212121;
+    color: white;
 }
     
     

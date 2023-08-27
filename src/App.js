@@ -33,6 +33,10 @@ function App() {
 			<Search onSearchChange={handleOnSearchChange} />
 			{currentWeather && <CurrentWeather data={currentWeather} />}
 			{forecast && <Forecast data={forecast} />}
+
+			<footer style={{ textAlign: 'center', marginTop: '20px', color: '#888' }}>
+				&copy; {new Date().getFullYear()} Bishnu Mishra. All rights reserved.
+			</footer>
 		</div>
 	);
 }
