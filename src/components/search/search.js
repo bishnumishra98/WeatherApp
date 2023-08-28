@@ -18,7 +18,7 @@ const Search = ({onSearchChange}) => {
 			return { options };
 		} catch (error) {
 			console.error(error);
-			return { options: [] }; // You might want to handle the error more gracefully
+			return { options: [], error: 'An error occurred while fetching data. Please try again later.' };
 		}
 	};
 	  
@@ -31,7 +31,7 @@ const Search = ({onSearchChange}) => {
     return (
         <AsyncPaginate
             placeholder="Search a city"
-            debounceTimeout={600}
+            debounceTimeout={100}
             value={search}
             onChange={handleOnChange}
             loadOptions={loadOptions}

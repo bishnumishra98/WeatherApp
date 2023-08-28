@@ -36,9 +36,7 @@ function App() {
 			{currentWeather && <CurrentWeather data={currentWeather} />}
 			{forecast && <Forecast data={forecast} />}
 
-			<footer>
-				&copy; {new Date().getFullYear()} Bishnu Mishra. All rights reserved.
-			</footer>
+			<footer>&copy; {new Date().getFullYear()} Bishnu Mishra. All rights reserved.</footer>
 		</div>
 	);
 }
