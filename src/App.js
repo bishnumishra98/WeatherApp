@@ -30,11 +30,13 @@ function App() {
 
 	return (
 		<div className="container">
+			<header>LIVE WEATHER APP</header>
+
 			<Search onSearchChange={handleOnSearchChange} />
 			{currentWeather && <CurrentWeather data={currentWeather} />}
 			{forecast && <Forecast data={forecast} />}
 
-			<footer style={{ textAlign: 'center', marginTop: '20px', color: '#888' }}>
+			<footer>
 				&copy; {new Date().getFullYear()} Bishnu Mishra. All rights reserved.
 			</footer>
 		</div>
