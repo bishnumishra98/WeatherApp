@@ -33,7 +33,7 @@ const Forecast = ({data}) => {
                                 </div>
                                 <div className="daily-details-grid-items">
                                     <label>Wind speed</label>
-                                    <label>{item.wind.speed} m/s</label>
+                                    <label>{((item.wind.speed)*18)/5} km/hr</label>
                                 </div>
                                 <div className="daily-details-grid-items">
                                     <label>Humidity</label>
